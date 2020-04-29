@@ -41,7 +41,8 @@ public class vtnChat extends javax.swing.JFrame {
      */
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
+    private void initComponents()
+    {
 
         jTextField1 = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -78,11 +79,14 @@ public class vtnChat extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(255, 204, 204));
-        addWindowListener(new java.awt.event.WindowAdapter() {
-            public void windowClosing(java.awt.event.WindowEvent evt) {
+        addWindowListener(new java.awt.event.WindowAdapter()
+        {
+            public void windowClosing(java.awt.event.WindowEvent evt)
+            {
                 formWindowClosing(evt);
             }
-            public void windowOpened(java.awt.event.WindowEvent evt) {
+            public void windowOpened(java.awt.event.WindowEvent evt)
+            {
                 formWindowOpened(evt);
             }
         });
@@ -106,16 +110,21 @@ public class vtnChat extends javax.swing.JFrame {
 
         tfMsjDer.setBackground(new java.awt.Color(204, 204, 255));
         tfMsjDer.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        tfMsjDer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        tfMsjDer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 tfMsjDerActionPerformed(evt);
             }
         });
-        tfMsjDer.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+        tfMsjDer.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
                 tfMsjDerKeyPressed(evt);
             }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
+            public void keyTyped(java.awt.event.KeyEvent evt)
+            {
                 tfMsjDerKeyTyped(evt);
             }
         });
@@ -123,24 +132,31 @@ public class vtnChat extends javax.swing.JFrame {
         btnEnviarDer.setIcon(new javax.swing.ImageIcon(getClass().getResource("/multimedia/Sin título.png"))); // NOI18N
         btnEnviarDer.setBorderPainted(false);
         btnEnviarDer.setContentAreaFilled(false);
-        btnEnviarDer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnEnviarDer.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnEnviarDerActionPerformed(evt);
             }
         });
-        btnEnviarDer.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+        btnEnviarDer.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
                 btnEnviarDerKeyPressed(evt);
             }
         });
 
         tfMsjIzq.setBackground(new java.awt.Color(204, 204, 255));
         tfMsjIzq.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        tfMsjIzq.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+        tfMsjIzq.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
                 tfMsjIzqKeyPressed(evt);
             }
-            public void keyTyped(java.awt.event.KeyEvent evt) {
+            public void keyTyped(java.awt.event.KeyEvent evt)
+            {
                 tfMsjIzqKeyTyped(evt);
             }
         });
@@ -148,18 +164,24 @@ public class vtnChat extends javax.swing.JFrame {
         btnEnviarIzq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/multimedia/Sin título.png"))); // NOI18N
         btnEnviarIzq.setBorderPainted(false);
         btnEnviarIzq.setContentAreaFilled(false);
-        btnEnviarIzq.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
+        btnEnviarIzq.addMouseListener(new java.awt.event.MouseAdapter()
+        {
+            public void mouseClicked(java.awt.event.MouseEvent evt)
+            {
                 btnEnviarIzqMouseClicked(evt);
             }
         });
-        btnEnviarIzq.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnEnviarIzq.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnEnviarIzqActionPerformed(evt);
             }
         });
-        btnEnviarIzq.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyPressed(java.awt.event.KeyEvent evt) {
+        btnEnviarIzq.addKeyListener(new java.awt.event.KeyAdapter()
+        {
+            public void keyPressed(java.awt.event.KeyEvent evt)
+            {
                 btnEnviarIzqKeyPressed(evt);
             }
         });
@@ -168,8 +190,10 @@ public class vtnChat extends javax.swing.JFrame {
         btnOrdenar.setBorderPainted(false);
         btnOrdenar.setContentAreaFilled(false);
         btnOrdenar.setEnabled(false);
-        btnOrdenar.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnOrdenar.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnOrdenarActionPerformed(evt);
             }
         });
@@ -180,8 +204,10 @@ public class vtnChat extends javax.swing.JFrame {
         btnBusca.setBorderPainted(false);
         btnBusca.setContentAreaFilled(false);
         btnBusca.setEnabled(false);
-        btnBusca.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
+        btnBusca.addActionListener(new java.awt.event.ActionListener()
+        {
+            public void actionPerformed(java.awt.event.ActionEvent evt)
+            {
                 btnBuscaActionPerformed(evt);
             }
         });
