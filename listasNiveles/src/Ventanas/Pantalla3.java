@@ -9,13 +9,13 @@ package Ventanas;
  *
  * @author manue
  */
-public class Pantalla2 extends javax.swing.JFrame
+public class Pantalla3 extends javax.swing.JFrame
 {
 
     /**
-     * Creates new form Pantalla2
+     * Creates new form Pantalla3
      */
-    public Pantalla2()
+    public Pantalla3()
     {
         initComponents();
     }
@@ -30,26 +30,24 @@ public class Pantalla2 extends javax.swing.JFrame
     private void initComponents()
     {
 
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        bSalir = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
         jPanel1 = new javax.swing.JPanel();
-        bAgregar = new javax.swing.JButton();
-        bEliminar = new javax.swing.JButton();
-        bSalir = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
 
-        jScrollPane1.setViewportView(jPanel1);
-
-        bAgregar.setText("Agregar");
-        bAgregar.addActionListener(new java.awt.event.ActionListener()
+        jButton1.setText("Agregar");
+        jButton1.addActionListener(new java.awt.event.ActionListener()
         {
             public void actionPerformed(java.awt.event.ActionEvent evt)
             {
-                bAgregarActionPerformed(evt);
+                jButton1ActionPerformed(evt);
             }
         });
 
-        bEliminar.setText("Eliminar");
+        jButton2.setText("Eliminar");
 
         bSalir.setText("Salir");
         bSalir.addActionListener(new java.awt.event.ActionListener()
@@ -60,6 +58,8 @@ public class Pantalla2 extends javax.swing.JFrame
             }
         });
 
+        jScrollPane1.setViewportView(jPanel1);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -69,11 +69,11 @@ public class Pantalla2 extends javax.swing.JFrame
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1)
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(bAgregar)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
                         .addComponent(bSalir)
-                        .addGap(45, 45, 45)
-                        .addComponent(bEliminar)))
+                        .addGap(51, 51, 51)
+                        .addComponent(jButton2)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -81,29 +81,29 @@ public class Pantalla2 extends javax.swing.JFrame
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(bAgregar)
-                    .addComponent(bEliminar)
+                    .addComponent(jButton1)
+                    .addComponent(jButton2)
                     .addComponent(bSalir))
-                .addGap(14, 14, 14)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 236, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void bAgregarActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_bAgregarActionPerformed
-    {//GEN-HEADEREND:event_bAgregarActionPerformed
-        // TODO add your handling code here:
-        new Agregar2().setVisible(true);
-    }//GEN-LAST:event_bAgregarActionPerformed
-
     private void bSalirActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_bSalirActionPerformed
     {//GEN-HEADEREND:event_bSalirActionPerformed
         // TODO add your handling code here:
         this.dispose();
-        new Pantalla().setVisible(true);
+        new Pantalla2().setVisible(true);    
     }//GEN-LAST:event_bSalirActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt)//GEN-FIRST:event_jButton1ActionPerformed
+    {//GEN-HEADEREND:event_jButton1ActionPerformed
+        // TODO add your handling code here:
+        new Agregar3().setVisible(true);
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,18 +127,17 @@ public class Pantalla2 extends javax.swing.JFrame
             }
         } catch (ClassNotFoundException ex)
         {
-            java.util.logging.Logger.getLogger(Pantalla2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pantalla3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex)
         {
-            java.util.logging.Logger.getLogger(Pantalla2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pantalla3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex)
         {
-            java.util.logging.Logger.getLogger(Pantalla2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pantalla3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex)
         {
-            java.util.logging.Logger.getLogger(Pantalla2.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Pantalla3.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
@@ -146,15 +145,15 @@ public class Pantalla2 extends javax.swing.JFrame
         {
             public void run()
             {
-                new Pantalla2().setVisible(true);
+                new Pantalla3().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton bAgregar;
-    private javax.swing.JButton bEliminar;
     private javax.swing.JButton bSalir;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     // End of variables declaration//GEN-END:variables
